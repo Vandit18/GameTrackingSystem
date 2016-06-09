@@ -14,6 +14,7 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                  <li id="home" runat="server"><a href="../HomePage.aspx">Home</a></li>
+                <li id="game" runat="server"><a href="../Games.aspx">Games</a></li>
                 <li id="about" runat="server"><a href="../About.aspx">About</a></li>
                 <li id="feedback" runat="server"><a href="../FeedBack.aspx">FeedBack</a></li>
             </ul>

@@ -35,6 +35,10 @@ namespace GameTrackingSystem.User_Control
                 case "FeedBack Page":
                     feedback.Attributes.Add("class", "active");
                     break;
+
+                case "Game Page":
+                    game.Attributes.Add("class", "active");
+                    break;
             }
         }
     }
