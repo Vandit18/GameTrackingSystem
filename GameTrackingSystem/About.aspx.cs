@@ -8,12 +8,12 @@ using System.Web.UI.WebControls;
  @author: Vandit Kothari/Jose Mathew
     @date: June 8,2016
     @Website Name : gametrackingsystem@azurewebsites.net
-    @This is a HomePage.
+    @This is a About Page 
     @version = 1.0
 */
 namespace GameTrackingSystem
 {
-    public partial class HomePage : System.Web.UI.Page
+    public partial class About : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
