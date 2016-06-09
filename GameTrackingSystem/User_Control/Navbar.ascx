@@ -13,9 +13,9 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FeedBack</a></li>
+                 <li id="home" runat="server"><a href="../HomePage.aspx">Home</a></li>
+                <li id="about" runat="server"><a href="../About.aspx">About</a></li>
+                <li id="feedback" runat="server"><a href="../FeedBack.aspx">FeedBack</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Login</a></li>

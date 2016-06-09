@@ -10,12 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title></title>
     <!-- css section -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
-     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/clean-blog.min.css" rel="stylesheet" />
+    <link href="Content/Custome.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -28,12 +27,32 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
+    <!-- Footer -->
+  
+    <footer class="navbar-default navbar-fixed-bottom">
+           <div class="panel panel-default">
+  <div class="container-fluid">
+  
+       <div class="container">
+            <p class="pull-left"> </p>
+            <div class="pull-right">
+                 <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="https://github.com/Vandit18/GameTrackingSystem"> <i class="fa fa-github">   </i> </a> </li>
+                       
+                    </ul>
+                </div>
+            </div>
+     </div>   
+  </div>
+</footer>
+
      <!-- javascript section -->
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="Scripts/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     
 
 </body>
 </html>

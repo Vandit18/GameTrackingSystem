@@ -11,7 +11,31 @@ namespace GameTrackingSystem.User_Control
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            addActivePage();
+        }
+        /*
+       * This method adds a css class of "active" to list items related
+       * to navigation links of each page
+       * 
+       * @method addActiveClass
+       * @return {void}
+       * */
+        private void addActivePage()
+        {
+            switch (Page.Title)
+            {
+                case "Home Page":
+                    home.Attributes.Add("class", "active");
+                    break;
 
+              case "About Page":
+                    about.Attributes.Add("class", "active");
+                    break;
+
+                case "FeedBack Page":
+                    feedback.Attributes.Add("class", "active");
+                    break;
+            }
         }
     }
 }
