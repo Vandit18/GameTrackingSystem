@@ -10,7 +10,7 @@
         <asp:TextBox runat="server" type="userName" id="inputUserName" class="form-control" placeholder="User Name" required="true"/>
         <label for="inputPassword" class="sr-only">Password</label>
         <asp:TextBox runat="server" type="password" id="inputPassword" class="form-control" placeholder="Password" required="true"/>
-        <asp:button runat="server" class="btn btn-lg btn-primary btn-block" type="submit" Text="Log in"></asp:button>
+        <asp:button runat="server" class="btn btn-lg btn-primary btn-block" type="submit" Text="Log in" OnClick="Unnamed_Click"></asp:button>
       
 
     </div> <!-- /container -->
