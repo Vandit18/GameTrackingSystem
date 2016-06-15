@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameTrackingSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,19 @@ namespace GameTrackingSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.ConnectionToDB();
+        }
+        protected void ConnectionToDB()
+        {
+            using (VJKMConnection db = new VJKMConnection())
+            {
+                var gameEdit = (from allgames in db.Games
+                                select allgames);
 
+                // bind the result to the GridView
+                GameGridView.DataSource = gameEdit.AsQueryable().ToList();
+                GameGridView.DataBind();
+            }
         }
     }
 }
