@@ -17,9 +17,11 @@
                 <li id="game" runat="server"><a href="../Games.aspx">Games</a></li>
                 <li id="about" runat="server"><a href="../About.aspx">About</a></li>
                 <li id="feedback" runat="server"><a href="../FeedBack.aspx">FeedBack</a></li>
+               
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../LoginPage.aspx">Login</a></li>
+                <li id="Login" runat="server"><a href="../LoginPage.aspx">Login</a></li>
+                <li id="Register" runat="server"><a href="../Register.aspx">Register</a></li>
             </ul>
         </div>
     </nav>
