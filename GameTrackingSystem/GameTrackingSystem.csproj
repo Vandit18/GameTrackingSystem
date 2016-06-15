@@ -96,6 +96,7 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="Register.aspx" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="GameEditPage.aspx" />
     <EntityDeploy Include="Models\VJKMModel.edmx">

@@ -10,15 +10,11 @@
         </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label class="control-label" for="FirstNameTextBox">First Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="First Name" required="true"></asp:TextBox>
-                    <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert-danger" ID="RequiredFieldValidator1" runat="server" ErrorMessage="First Name is required" ControlToValidate="FirstNameTextBox"></asp:RequiredFieldValidator>
+                    <label class="control-label" for="UserNameTextBox">User Name</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="UserNameTextBox" placeholder="User Name" required="true"></asp:TextBox>
+                    <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert-danger" ID="RequiredFieldValidator1" runat="server" ErrorMessage="User Name is required" ControlToValidate="UserNameTextBox"></asp:RequiredFieldValidator>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="LastNameTextBox">Last Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="LastNameTextBox" placeholder="Last Name" required="true"></asp:TextBox>
-                    <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert-danger" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Last Name is required" ControlToValidate="LastNameTextBox"></asp:RequiredFieldValidator>
-                </div>
+                
                 <div class="form-group">
                     <label class="control-label" for="PassTextBox">Password</label>
                     <asp:TextBox runat="server" TextMode="Password" CssClass="form-control" ID="PasswordTextBox" placeholder="Password" required="true"></asp:TextBox>
@@ -31,7 +27,7 @@
                 </div>
                 <div class="text-right">
                     <a class="btn btn-warning btn-lg" id="CancelButton" href="HomePage.aspx">Cancel</a>
-                    <asp:Button runat="server" CssClass="btn btn-primary btn-lg" ID="SendButton" Text="Register" CausesValidation="true"/>
+                    <asp:Button runat="server" CssClass="btn btn-primary btn-lg" ID="RegisterButton" Text="Register" CausesValidation="true" OnClick="RegisterButton_Click"/>
                 </div>
             </div>
         </div>
