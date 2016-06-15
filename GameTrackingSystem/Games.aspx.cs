@@ -87,13 +87,9 @@ namespace GameTrackingSystem
                 newGame.GameDescription= GameDesc.Text;
                 newGame.TeamA= TeamA.Text;
                 newGame.TeamB= TeamB.Text;
-
-                if(TeamAScore.Text != "0")
-                    newGame.TeamAScore= Convert.ToInt32(TeamAScore.Text);
-                if (TeamBScore.Text != "0")
-                    newGame.TeamBScore = Convert.ToInt32(TeamBScore.Text);
-                if (Spectators.Text != "0")
-                    newGame.Spectators=Convert.ToInt32( Spectators.Text);
+                newGame.TeamAScore= Convert.ToInt32(TeamAScore.Text);
+                newGame.TeamBScore = Convert.ToInt32(TeamBScore.Text);
+                newGame.Spectators=Convert.ToInt32( Spectators.Text);
                 newGame.WinningTeam= WinningTeam.Text;
                 newGame.GameDate=Convert.ToDateTime(GameDateTextBox.Text);
 
