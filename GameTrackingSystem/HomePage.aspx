@@ -2,8 +2,9 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="col-lg-12">
-        <div class="offset-col-lg-3 col-lg-5">
+    
+    <div class="col-lg-12" >
+        <div class="col-md-offset-2 col-lg-8">
            <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GameGridView" AutoGenerateColumns="false" DataKeyNames="GameID"
                        PagerStyle-CssClass="pagination-ys">

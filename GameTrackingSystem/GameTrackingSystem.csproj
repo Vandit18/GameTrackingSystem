@@ -84,6 +84,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\bgimg.jpg" />
+    <Content Include="img\logo1.png" />
+    <Content Include="img\logo2.png" />
     <Content Include="Models\VJKMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>VJKMModel.edmx</DependentUpon>
