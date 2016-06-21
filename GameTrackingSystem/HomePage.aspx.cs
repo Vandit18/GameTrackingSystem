@@ -1,6 +1,7 @@
 ﻿using GameTrackingSystem.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -21,15 +22,57 @@ namespace GameTrackingSystem
         {
             using (VJKMConnection db = new VJKMConnection())
             {
-                var gameEdit = (from allgames in db.Games
+                //starting and ending date of a week.
+                DateTime mondayDate = DateTime
+                          .Today
+                          .AddDays(((int)(DateTime.Today.DayOfWeek) * -1) + 1);
+
+                DateTime sundayDate = mondayDate.AddDays(6);
+
+                Heading.Text = mondayDate.ToLongDateString();
+                var gameEdit = (from allgames in db.Games where allgames.GameDate>= mondayDate && allgames.GameDate <= sundayDate
                                 select allgames);
 
                 
                 GameGridView.DataSource = gameEdit.AsQueryable().ToList();
                 GameGridView.DataBind();
-
-              
             }
         }
+        
+
+
+        protected void PreviousButton_Click(object sender, EventArgs e)
+        {
+            using (VJKMConnection db = new VJKMConnection())
+            {
+                DateTime current1 = Convert.ToDateTime(Heading.Text);
+                DateTime current2 = current1.Date;
+                DateTime current = DateTime
+                          .Today
+                          .AddDays(((int)(DateTime.Today.DayOfWeek) * -1) + 1);
+                DateTime previousDate = current2.AddDays(-7);
+
+                Heading.Text = previousDate.ToLongDateString();
+
+                DateTime previousDateWeekMonday = previousDate.AddDays(((int)(DateTime.Today.DayOfWeek) * -1) + 1);
+                DateTime previousDateWeekSunday = previousDateWeekMonday.AddDays(6);
+
+
+
+                var gameEdit1 = (from allgames in db.Games
+                                 where allgames.GameDate >= previousDateWeekMonday && allgames.GameDate <= previousDateWeekSunday
+                                 select allgames);
+
+                GameGridView.DataSource = gameEdit1.AsQueryable().ToList();
+                GameGridView.DataBind();
+
+            }
+        }
+
+        protected void NextButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }
