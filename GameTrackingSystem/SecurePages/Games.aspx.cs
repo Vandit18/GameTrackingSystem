@@ -56,7 +56,7 @@ namespace GameTrackingSystem
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             // Redirect back to Students page
-            Response.Redirect("~/GameEditPage.aspx");
+            Response.Redirect("~/SecurePages/GameEditPage.aspx");
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace GameTrackingSystem
                 db.SaveChanges();
 
                 // Redirect back to the updated students page
-                Response.Redirect("~/GameEditPage.aspx");
+                Response.Redirect("~/SecurePages/GameEditPage.aspx");
             }
         }
     }

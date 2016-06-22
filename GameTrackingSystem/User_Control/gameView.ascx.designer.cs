@@ -85,13 +85,13 @@ namespace GameTrackingSystem.User_Control {
         protected global::System.Web.UI.WebControls.Label time;
         
         /// <summary>
-        /// winningteam control.
+        /// TotalGoals control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label winningteam;
+        protected global::System.Web.UI.WebControls.Label TotalGoals;
         
         /// <summary>
         /// SpecNumber control.
@@ -110,14 +110,5 @@ namespace GameTrackingSystem.User_Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label resultA;
-        
-        /// <summary>
-        /// resultB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label resultB;
     }
 }

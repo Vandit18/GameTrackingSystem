@@ -24,24 +24,25 @@ namespace GameTrackingSystem.User_Control
             time.Text = date.ToShortDateString();
             //resultA.Text = ResultA;
             //resultB.Text = ResultB;
-            winningteam.Text = winningTeam;
+            TotalGoals.Text = (Convert.ToInt32(TeamBScore.Text) + Convert.ToInt32(TeamAScore.Text)).ToString();
             description.Text = Description;
-
-            if (Convert.ToInt32(TeamBScore.Text) > Convert.ToInt32(TeamAScore.Text))
+            if (date > DateTime.Today)
+            {
+                resultA.Text = "Not Availiable";
+            }
+            else if (Convert.ToInt32(TeamBScore.Text) > Convert.ToInt32(TeamAScore.Text))
             {
                 int result1 = Convert.ToInt32(TeamBScore.Text) - Convert.ToInt32(TeamAScore.Text);
-                resultB.Text = teamBName + " won by " + result1 + " goals";
-                resultA.Text = teamAName + " lost by " + result1 + " goals";
+                resultA.Text = teamBName + " won by " + result1 + " goals";
             }
             else if (Convert.ToInt32(TeamBScore.Text) < Convert.ToInt32(TeamAScore.Text))
             {
                 int result2 = Convert.ToInt32(TeamAScore.Text) - Convert.ToInt32(TeamBScore.Text);
                 resultA.Text = teamAName + " won by " + result2 + " goals";
-                resultB.Text = teamBName + " lost by " + result2 + " goals";
             }
             else
             {
-
+                resultA.Text = "Match Drawn";
             }
 
         }

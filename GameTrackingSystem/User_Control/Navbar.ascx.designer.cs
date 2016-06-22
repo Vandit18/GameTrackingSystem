@@ -49,6 +49,15 @@ namespace GameTrackingSystem.User_Control {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl register;
         
         /// <summary>
+        /// UserPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder UserPlaceHolder;
+        
+        /// <summary>
         /// ContosoPlaceHolder control.
         /// </summary>
         /// <remarks>
@@ -56,15 +65,6 @@ namespace GameTrackingSystem.User_Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder ContosoPlaceHolder;
-        
-        /// <summary>
-        /// home1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl home1;
         
         /// <summary>
         /// game control.
@@ -76,15 +76,6 @@ namespace GameTrackingSystem.User_Control {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl game;
         
         /// <summary>
-        /// about control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl about;
-        
-        /// <summary>
         /// logout control.
         /// </summary>
         /// <remarks>
@@ -92,6 +83,24 @@ namespace GameTrackingSystem.User_Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl logout;
+        
+        /// <summary>
+        /// gameEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameEdit;
+        
+        /// <summary>
+        /// about control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl about;
         
         /// <summary>
         /// feedback control.

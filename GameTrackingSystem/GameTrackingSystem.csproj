@@ -133,6 +133,9 @@
     <Content Include="img\bgimg.jpg" />
     <Content Include="img\logo1.png" />
     <Content Include="img\logo2.png" />
+    <Content Include="img\messi.png" />
+    <Content Include="img\ronaldo.jpg" />
+    <Content Include="img\trophy.png" />
     <Content Include="Logout.aspx" />
     <Content Include="Models\VJKMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -147,14 +150,6 @@
     <Content Include="packages.config" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\app.js" />
-    <Content Include="SecurePages\GameEditPage.aspx" />
-    <EntityDeploy Include="Models\VJKMModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>VJKMModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\VJKMModel.edmx.diagram">
-      <DependentUpon>VJKMModel.edmx</DependentUpon>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -168,6 +163,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
+    <Content Include="SecurePages\GameEditPage.aspx" />
+    <EntityDeploy Include="Models\VJKMModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VJKMModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\VJKMModel.edmx.diagram">
+      <DependentUpon>VJKMModel.edmx</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

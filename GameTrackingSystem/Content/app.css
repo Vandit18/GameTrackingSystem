@@ -2,10 +2,13 @@
 }
 .displaydiv {
     width:45%;
+    height:50%;
     text-align:center;
     margin:10px;
     padding:15px;
-    background-color:#336699;
-    color:white;
     float:left;
+    border:solid;
+    border-color:#336600;
+    border-width:15px;
+    border-radius:15px;
 }

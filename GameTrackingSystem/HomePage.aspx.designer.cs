@@ -31,30 +31,30 @@ namespace GameTrackingSystem {
         protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
         
         /// <summary>
-        /// PreviousButton control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PreviousButton;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Current control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Current;
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// NextButton control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NextButton;
+        protected global::System.Web.UI.WebControls.Button Button3;
     }
 }

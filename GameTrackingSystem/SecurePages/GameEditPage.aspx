@@ -9,7 +9,7 @@
 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                     ID="GameGridView" AutoGenerateColumns="false" DataKeyNames="GameID"
-                    OnRowDeleting="GameGridView_RowDeleting" AllowPaging="true"
+                    OnRowDeleting="GameGridView_RowDeleting" 
                     PagerStyle-CssClass="pagination-ys">
                     <Columns>
                         
@@ -19,8 +19,8 @@
                         <asp:BoundField DataField="GameDate" HeaderText="Game Date" Visible="true" SortExpression="GameDate"
                             DataFormatString="{0:MMM dd, yyyy}" />
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
-                            NavigateUrl="~/Games.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
-                            DataNavigateUrlFields="GameID" DataNavigateUrlFormatString="Games.aspx?GameID={0}" />
+                            NavigateUrl="~/SecurePages/Games.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
+                            DataNavigateUrlFields="GameID" DataNavigateUrlFormatString="~/SecurePages/Games.aspx?GameID={0}" />
                         <asp:CommandField  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>

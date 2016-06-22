@@ -3,41 +3,41 @@
 
 <div class="displaydiv">
     <h2>
+        <i class="fa fa-futbol-o" aria-hidden="true"></i>
         <asp:Label runat="server" ID="gameheading"></asp:Label>
     </h2>
     <div>
         <h4>
               <asp:Label runat="server" ID="teamAname"></asp:Label>
             &nbsp;<asp:Label runat="server" ID="TeamAScore"></asp:Label>
-        &nbsp;----
+        &nbsp;&nbsp;:&nbsp;&nbsp;
             <asp:Label runat="server" ID="teamBname"></asp:Label>
             &nbsp;<asp:Label runat="server" ID="TeamBScore"></asp:Label>
         </h4>
     </div>
     <div>
-        <h4>
-            Game Description:<asp:Label runat="server" ID="description"></asp:Label>
-        </h4>
+        <h5>
+            <asp:Label runat="server" ID="description"></asp:Label>
+        </h5>
     </div>
     <div>
-        <h4>
+        <h5>
              Stadium:<asp:Label runat="server" ID="location"></asp:Label>
             &nbsp;&nbsp;
-            Date:<asp:Label runat="server" ID="time"></asp:Label>
-        </h4>
+            <asp:Label runat="server" ID="time"></asp:Label>
+        </h5>
     </div>
    <div>
-       <h4>
-            WinningTeam: <asp:Label runat="server" ID="winningteam"></asp:Label> 
+       <h5>
+            Total Goals : <asp:Label runat="server" ID="TotalGoals"></asp:Label> 
              &nbsp;&nbsp; 
              Spectators: <asp:Label runat="server" ID="SpecNumber"></asp:Label>
-       </h4>
+       </h5>
    </div>
     <div>
         <h4>
+                 <i class="fa fa-trophy" aria-hidden="true"></i>
               <asp:Label runat="server" ID="resultA"></asp:Label>
-            <br />
-              <asp:Label runat="server" ID="resultB"></asp:Label>
         </h4>
     </div>
 </div>

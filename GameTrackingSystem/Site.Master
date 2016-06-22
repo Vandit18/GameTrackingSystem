@@ -13,9 +13,8 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
-    <link href="Content/clean-blog.min.css" rel="stylesheet" />
     <link href="Content/Custome.css" rel="stylesheet" />
-    <link href="Content/app.css" rel="stylesheet" />
+    <link href="/Content/app.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -30,12 +29,16 @@
     </form>
     <!-- Footer -->
   
-    <footer class="navbar-default navbar-fixed-bottom">
-           <div class="panel panel-default">
+    <footer class="navbar-inverse navbar-fixed-bottom">
+           
   <div class="container-fluid">
   
        <div class="container">
-            <p class="pull-left"> </p>
+
+            <p class="pull-left" style="color:white"> 
+                <img src="img/logo1.png" />
+                @Copyright VJKM 2016
+            </p>
             <div class="pull-right">
                  <ul class="social">
                         <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
@@ -46,14 +49,11 @@
                 </div>
             </div>
      </div>   
-  </div>
+
 </footer>
-
      <!-- javascript section -->
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/jquery-2.2.3.min.js"></script>
-    <script src="Scripts/app.js"></script>
-     
-
+    <script src="/Scripts/jquery-2.2.4.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/app.js"></script>
 </body>
 </html>

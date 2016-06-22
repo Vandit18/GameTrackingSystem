@@ -1,7 +1,8 @@
 ﻿$(document).ready(function () {
 
-    function validateUsername() {
-        alert("UserName does Exsit. Pls choose a different one.")
-    }
+    console.log("app started");
 
-})
+    $("a.btn.btn-danger.btn-sm").click(function () {
+        return confirm("Are you sure you want to delete this record?");
+    });
+});
