@@ -41,11 +41,11 @@ namespace GameTrackingSystem.User_Control
                     break;
 
                 case "Login Page":
-                    Login.Attributes.Add("class", "active");
+                    login.Attributes.Add("class", "active");
                     break;
 
                 case "Register Page":
-                    Register.Attributes.Add("class", "active");
+                    register.Attributes.Add("class", "active");
                     break;
             }
         }
