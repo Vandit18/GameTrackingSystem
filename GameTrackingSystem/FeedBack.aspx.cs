@@ -18,6 +18,7 @@ namespace GameTrackingSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //This is to send email to user and admin.
             try
             {
                 MailMessage mail = new MailMessage();
@@ -42,7 +43,10 @@ namespace GameTrackingSystem
                 //MessageBox.Show(ex.ToString());
             }
         }
-
+        /*
+      * @method Unnamed_Click(Object,EventArgs)
+      * @return {void}
+      * */
         protected void Unnamed_Click(object sender, EventArgs e)
         {
             Response.Redirect("HomePage.aspx");

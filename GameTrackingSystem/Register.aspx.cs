@@ -10,6 +10,14 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 22,2016 
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is a Register Page.
+    @version = 1.1
+*/
 namespace GameTrackingSystem
 {
     public partial class Register : System.Web.UI.Page
@@ -21,52 +29,7 @@ namespace GameTrackingSystem
 
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
-            using (VJKMConnection db = new VJKMConnection())
-            {
-                //string userName = UserNameTextBox.Text;
-                //string password = PasswordTextBox.Text;
-                //string confPass = ConfirmPasswordTextBox.Text;
-
-                ////check user name exists in db
-
-                //var userNameCheck = (from Users in db.Users
-                //                     where Users.UserName == userName
-                //                     select Users);
-
-                //if (userNameCheck.Any())
-                //{
-                //    ClientScript.RegisterStartupScript(GetType(), "validate", "alert('UserName already EXISTS.');", true);
-                //}
-                //else
-                //{
-                //    if(password == confPass)
-                //    {
-                //        if(password.Length>5)
-                //        {
-                //            User newUser = new User();
-
-                //            newUser.UserName = userName;
-                //            newUser.Password = password;
-                //            db.Users.Add(newUser);
-                //            db.SaveChanges();
-                //            Response.Redirect("GameEditPage.aspx");
-                //        }
-                //        else
-                //        {
-                //            ClientScript.RegisterStartupScript(GetType(), "validate", "alert('Password must be atleast 6 char long.');", true);
-                //            PasswordTextBox.Text = "";
-                //            PasswordTextBox.Focus();
-                //        }
-                //    }
-                //    else
-                //    {
-                //        ClientScript.RegisterStartupScript(GetType(), "validate", "alert('Passwords dont match.');", true);
-                //        ConfirmPasswordTextBox.Text = "";
-                //        ConfirmPasswordTextBox.Focus();
-                //    }
-                //}
-            }
-                // create new userStore and userManager objects
+              // create new userStore and userManager objects
                 var userStore = new UserStore<IdentityUser>();
                 var userManager = new UserManager<IdentityUser>(userStore);
 

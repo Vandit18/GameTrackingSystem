@@ -1,4 +1,10 @@
-﻿body {
+﻿/**
+ @author: Vandit Kothari/Jose Mathew
+  @descriprion:  This is the style for div box in gameView.aspx page(user Control).
+    @date : June 22,2016
+*/
+
+body {
 }
 .displaydiv {
     width:45%;

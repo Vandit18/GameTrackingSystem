@@ -24,7 +24,7 @@
                    
                 </asp:PlaceHolder>
 
-                <asp:PlaceHolder ID="ContosoPlaceHolder" runat="server">
+                <asp:PlaceHolder ID="VJKMPlaceHolder" runat="server">
                     <li id="game" runat="server"><a href="../SecurePages/Games.aspx"><i class="fa fa-leanpub fa-lg"></i> Games</a></li>
                     <li id="logout" runat="server"><a href="/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                     <li id="gameEdit" runat="server"><a href="../SecurePages/GameEditPage.aspx"><i class="fa fa-pencil" aria-hidden="true"></i> GameEdit</a></li>

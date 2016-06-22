@@ -1,4 +1,11 @@
-﻿$(document).ready(function () {
+﻿/**
+ @author: Vandit Kothari/Jose Mathew
+    @date : June 22,2016
+    @Description: confermation message for deleting user.
+    
+*/
+
+$(document).ready(function () {
 
     console.log("app started");
 

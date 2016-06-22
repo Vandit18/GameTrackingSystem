@@ -58,13 +58,13 @@ namespace GameTrackingSystem.User_Control {
         protected global::System.Web.UI.WebControls.PlaceHolder UserPlaceHolder;
         
         /// <summary>
-        /// ContosoPlaceHolder control.
+        /// VJKMPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ContosoPlaceHolder;
+        protected global::System.Web.UI.WebControls.PlaceHolder VJKMPlaceHolder;
         
         /// <summary>
         /// game control.

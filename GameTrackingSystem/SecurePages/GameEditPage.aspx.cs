@@ -5,7 +5,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 21,2016
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is Dashboard for signed in user.
+    @version = 1.1
+*/
 namespace GameTrackingSystem
 {
     public partial class GameEditPage : System.Web.UI.Page
@@ -31,18 +37,18 @@ namespace GameTrackingSystem
             // store which row was clicked
             int selectedRow = e.RowIndex;
 
-            // get the selected StudentID using the Grid's DataKey collection
+            // get the selected GameId using the Grid's DataKey collection
             int GameID = Convert.ToInt32(GameGridView.DataKeys[selectedRow].Values["GameID"]);
 
-            // use EF to find the selected student in the DB and remove it
+            // use EF to find the selected game in the DB and remove it
             using (VJKMConnection db = new VJKMConnection())
             {
-                // create object of the Student class and store the query string inside of it
+                // create object of the game class and store the query string inside of it
                 Game deletedGame = (from GameRecords in db.Games
                                           where GameRecords.GameID == GameID
                                           select GameRecords).FirstOrDefault();
 
-                // remove the selected student from the db
+                // remove the selected game from the db
                 db.Games.Remove(deletedGame);
 
                 // save my changes back to the database

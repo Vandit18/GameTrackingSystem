@@ -10,6 +10,14 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 22,2016
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is a LogOut Page.
+    @version = 1.0
+*/
+
 namespace GameTrackingSystem
 {
     public partial class Logout : System.Web.UI.Page

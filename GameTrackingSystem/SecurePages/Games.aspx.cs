@@ -55,7 +55,7 @@ namespace GameTrackingSystem
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            // Redirect back to Students page
+            // Redirect back to GameEdit page
             Response.Redirect("~/SecurePages/GameEditPage.aspx");
         }
 
@@ -64,24 +64,24 @@ namespace GameTrackingSystem
             // Use EF to connect to the server
             using (VJKMConnection db = new VJKMConnection())
             {
-                // use the Student model to create a new student object and
+                // use the game model to create a new game object and
                 // save a new record
                 Game newGame = new Game();
 
                 int GameID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a GameId in it
                 {
                     // get the id from the URL
                     GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-                    // get the current student from EF DB
+                    // get the current Game from EF DB
                     newGame = (from game in db.Games
                                   where game.GameID == GameID
                                   select game).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // add form data to the new game record
                 newGame.GameName= GameNameTextBox.Text;
                 newGame.GameLocation= GLocationTextBox.Text;
                 newGame.GameDescription= GameDesc.Text;
@@ -93,7 +93,7 @@ namespace GameTrackingSystem
                 newGame.WinningTeam= WinningTeam.Text;
                 newGame.GameDate=Convert.ToDateTime(GameDateTextBox.Text);
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new game into the database
 
                 if (GameID == 0)
                 {
@@ -104,7 +104,7 @@ namespace GameTrackingSystem
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated GameEditPage
                 Response.Redirect("~/SecurePages/GameEditPage.aspx");
             }
         }

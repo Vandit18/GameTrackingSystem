@@ -12,10 +12,10 @@ using System.Web.UI.WebControls;
 /**
  @author: Vandit Kothari/Jose Mathew
     @date: June 8,2016 
-    @updated : June 15,2016
+    @updated : June 22,2016
     @Website Name : gametrackingsystem@azurewebsites.net
     @This is a HomePage.
-    @version = 2.0
+    @version = 1.1.2
 */
 namespace GameTrackingSystem
 {
@@ -35,13 +35,12 @@ namespace GameTrackingSystem
                     DateTime sundayDate = mondayDate.AddDays(6);
 
                     Heading.Text = mondayDate.ToShortDateString();
+
+                    //return results between starting and ending date.
                     var gameEdit4 = (from allgames in db.Games
                                      where allgames.GameDate >= mondayDate && allgames.GameDate <= sundayDate
                                      select allgames);
 
-
-                    //GameGridView.DataSource = gameEdit4.AsQueryable().ToList();
-                    //GameGridView.DataBind();
 
                     display(gameEdit4);
 
@@ -59,18 +58,20 @@ namespace GameTrackingSystem
             {
                 DateTime current1 = Convert.ToDateTime(Heading.Text);
 
+                //starting and ending date of a week.
+
                 DateTime previousDateWeekMonday = current1.AddDays(-7);
                 DateTime previousDateWeekSunday = current1.AddDays(-1);
 
                 Heading.Text = previousDateWeekMonday.ToLongDateString();
 
+                //return results between starting and ending date.
                 var gameEdit1 = (from allgames in db.Games
                                  where allgames.GameDate >= previousDateWeekMonday && allgames.GameDate <= previousDateWeekSunday
                                  select allgames);
 
                 display(gameEdit1);
-                //GameGridView.DataSource = gameEdit1.AsQueryable().ToList();
-                //GameGridView.DataBind();
+               
 
 
             }
@@ -82,19 +83,19 @@ namespace GameTrackingSystem
             {
                 DateTime current1 = Convert.ToDateTime(Heading.Text);
 
+                //starting and ending date of a week.
                 DateTime NextMonday = current1.AddDays(+7);
                 DateTime NextSunday = current1.AddDays(+13);
 
                 Heading.Text = NextMonday.ToLongDateString();
 
+                //return results between starting and ending date.
                 var gameEdit1 = (from allgames in db.Games
                                  where allgames.GameDate >= NextMonday && allgames.GameDate <= NextSunday
                                  select allgames);
 
                 display(gameEdit1);
-                //GameGridView.DataSource = gameEdit1.AsQueryable().ToList();
-                //GameGridView.DataBind();
-
+               
             }
         }
 
@@ -110,16 +111,26 @@ namespace GameTrackingSystem
                 DateTime sundayDate = mondayDate.AddDays(6);
 
                 Heading.Text = mondayDate.ToLongDateString();
+                //return results between starting and ending date.
                 var gameEdit = (from allgames in db.Games
                                 where allgames.GameDate >= mondayDate && allgames.GameDate <= sundayDate
                                 select allgames);
 
                 display(gameEdit);
-                //GameGridView.DataSource = gameEdit.AsQueryable().ToList();
-                //GameGridView.DataBind();
+              
             }
         }
-
+        /*
+      * 
+      * This methods receives IQueryable as parameter and 
+      * each of the item it converts it into Jtocken. we create an object
+      * of the type gameview user control, sets the attributes of the class myBaseControl.
+      * and than loads that control into place holder 
+      * 
+      *  
+      * @method display(IQueryable)
+      * @return {void}
+      * */
         protected void display(IQueryable Games)
         {
             foreach (var Game in Games)
@@ -142,7 +153,14 @@ namespace GameTrackingSystem
 
         }
     }
-
+    /*
+      * 
+      *This class inhertis from system.web.UI.UserControl
+      * and gets and sets all the attributes. 
+      *  
+      * @class MyBaseControl
+      * 
+      * */
     public class MyBaseControl : System.Web.UI.UserControl
     {
         public string gameHeading

@@ -5,10 +5,23 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 21,2016
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is user control which populates every result from query.This class inhertis from the myBaseControl.
+    @version = 1.1
+*/
+
 namespace GameTrackingSystem.User_Control
 {
     public partial class gameView : MyBaseControl
     {
+        /**
+         *  On Page Load all the controls in the GameView.ascx page is set
+         *  to the attributes of the class myBaseControl in HomePage.aspx        * 
+         * 
+         */
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,8 +35,6 @@ namespace GameTrackingSystem.User_Control
             SpecNumber.Text = SpeNumber;
             location.Text = Location;
             time.Text = date.ToShortDateString();
-            //resultA.Text = ResultA;
-            //resultB.Text = ResultB;
             TotalGoals.Text = (Convert.ToInt32(TeamBScore.Text) + Convert.ToInt32(TeamAScore.Text)).ToString();
             description.Text = Description;
             if (date > DateTime.Today)

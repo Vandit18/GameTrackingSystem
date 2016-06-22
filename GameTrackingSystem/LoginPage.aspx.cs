@@ -14,7 +14,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
-
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 22,2016 
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is a LoginPage.
+    @version = 1.1
+*/
 namespace GameTrackingSystem
 {
     public partial class LoginPage : System.Web.UI.Page
@@ -23,32 +29,7 @@ namespace GameTrackingSystem
         {
            
         }
-
-        //protected void getUser()
-        //{
-        //    //// connect to EF
-        //    //using (VJKMConnection db = new VJKMConnection())
-        //    //{
-        //    //    //string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
-        //    //    string username = inputUserName.Text;
-        //    //    string password = inputPassword.Text;
-        //    //    // query the Students Table using EF and LINQ
-        //    //    var User = (from Users in db.Users
-        //    //                where Users.UserName == username && Users.Password == password
-        //    //                select Users);
-
-        //    //    if(User.Any())
-        //    //    {
-        //    //        Response.Redirect("GameEditPage.aspx");
-        //    //    }
-        //    //    else
-        //    //        Response.Redirect("HomePage.aspx");
-        //    //}
-
-
-
-        //}
-
+       
         protected void Unnamed_Click(object sender, EventArgs e)
         {
             // create new userStore and userManager objects

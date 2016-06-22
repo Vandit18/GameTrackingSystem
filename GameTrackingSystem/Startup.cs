@@ -6,6 +6,13 @@ using Owin;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security.Cookies;
 
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date : June 22,2016
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @version = 1.0
+*/
+
 [assembly: OwinStartup(typeof(GameTrackingSystem.Startup))]
 
 namespace GameTrackingSystem

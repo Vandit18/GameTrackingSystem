@@ -10,6 +10,14 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+/**
+ @author: Vandit Kothari/Jose Mathew
+    @date: June 22,2016
+    @Website Name : gametrackingsystem@azurewebsites.net
+    @This is a Navbar.
+    @version = 1.1
+*/
+
 namespace GameTrackingSystem.User_Control
 {
     public partial class Navbar : System.Web.UI.UserControl
@@ -22,8 +30,8 @@ namespace GameTrackingSystem.User_Control
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
 
-                    // show the Contoso Content area
-                    ContosoPlaceHolder.Visible = true;
+                    // show the GameTrackingSystem navbar.
+                    VJKMPlaceHolder.Visible = true;
                     PublicPlaceHolder.Visible = false;
 
                     if (HttpContext.Current.User.Identity.GetUserName() == "admin")
@@ -34,7 +42,7 @@ namespace GameTrackingSystem.User_Control
                 else
                 {
                     // only show login and register
-                    ContosoPlaceHolder.Visible = false;
+                    VJKMPlaceHolder.Visible = false;
                     PublicPlaceHolder.Visible = true;
                     UserPlaceHolder.Visible = false;
                 }
