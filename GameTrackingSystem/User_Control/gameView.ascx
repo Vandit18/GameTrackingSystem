@@ -2,10 +2,10 @@
 
 
 <div class="displaydiv">
-    <h2>
+    <h3>
         <i class="fa fa-futbol-o" aria-hidden="true"></i>
         <asp:Label runat="server" ID="gameheading"></asp:Label>
-    </h2>
+    </h3>
     <div>
         <h4>
               <asp:Label runat="server" ID="teamAname"></asp:Label>
