@@ -15,10 +15,11 @@
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/clean-blog.min.css" rel="stylesheet" />
     <link href="Content/Custome.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background-image:url(../img/bgimg.jpg)">
+<body>
     <form id="GameForm" runat="server">
         <bs3:Navbar runat="server"></bs3:Navbar>
     <div>

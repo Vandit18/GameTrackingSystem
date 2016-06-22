@@ -22,13 +22,13 @@ namespace GameTrackingSystem {
         protected global::System.Web.UI.WebControls.Label Heading;
         
         /// <summary>
-        /// GameGridView control.
+        /// PlaceHolder1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GameGridView;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
         
         /// <summary>
         /// PreviousButton control.
@@ -38,6 +38,15 @@ namespace GameTrackingSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button PreviousButton;
+        
+        /// <summary>
+        /// Current control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Current;
         
         /// <summary>
         /// NextButton control.
